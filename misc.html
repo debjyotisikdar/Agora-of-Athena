@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en" id="htmlMain">
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <title>Agora of Athena</title>
+
+        <script>
+
+        document.addEventListener("DOMContentLoaded", main);
+        function main()
+        {
+          var body = document.getElementById("body");
+          body.style.transition = "all 2.5s";
+          body.style.backgroundColor = "#000000";
+          var i = 0;
+
+          var html = document.getElementById("htmlMain");
+          html.style.transition = "all 2.5s";
+          html.style.backgroundColor = "#000000";
+
+
+
+          var colors = ['#d6bddd', '#b7b4db', '#abcada', '#b8d8bc', '#d8d8ba', '#ddbdc0']
+          changeColor();
+
+          function changeColor() {
+              myVar = setTimeout(change, 2500);
+          }
+
+          function change()
+          {
+              var texts = document.getElementsByClassName("text");
+
+              for(var j = 0; j < texts.length; j++)
+                texts[j].style.color = colors[i];
+
+              ++i;
+              if(i == colors.length) i = 0;
+              changeColor();
+          }
+
+        }
+
+
+        </script>
+
+    </head>
+
+    <body style="background-image: url(bgimg.gif); background-color: #ffffff;" id="body">
+      <audio autoplay>
+        <source src="welcome.m4a" type="audio/mpeg">
+      </audio>
+
+      <img src="logo.gif" style="height: auto; width: 10%;" class="center animate__animated animate__fadeIn">
+      <p class="animate__animated animate__zoomInDown" style="text-align:center; font-family: 'Cinzel Decorative', cursive; font-size: 3.5vw; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                                                              -webkit-background-clip: text;
+                                                              -webkit-text-fill-color: transparent;">
+        <a href="index.html">AGORA OF ATHENA</a>
+      </p>
+
+      <div class="animate__animated animate__fadeIn">
+
+        <div style="width: 25%; height: auto; float: left; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);">
+          <a href="ai.html"><div style="text-align: center; font-family: 'Cinzel Decorative', serif;
+          font-size: 2.4vw;
+          text-align: center;
+          background: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;">AI</div></a>
+        </div>
+
+        <div style="width: 25%; height: auto; float: left; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);">
+            <a href="ethics.html"><div style="text-align: center; font-family: 'Cinzel Decorative', serif;
+            font-size: 2.4vw;
+            text-align: center;
+            background: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">ETHICS</div></a>
+        </div>
+
+        <div style="width: 25%; height: auto; float: left; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);">
+            <div style="text-align: center; font-family: 'Cinzel Decorative', serif;
+            font-size: 2.4vw;
+            text-align: center;
+            background: linear-gradient(315deg, #ff0000 0%, #f2a65a 74%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">MISC</div>
+        </div>
+
+        <div style="width: 25%; height: auto; float: left; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);">
+            <a href="simulation.html"><div style="text-align: center; font-family: 'Cinzel Decorative', serif;
+            font-size: 2.4vw;
+            text-align: center;
+            background: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;">SIMULATION</div></a>
+        </div>
+        <br><br>
+      </div>
+      <img src="gradient.jpg" style="width: 100%; height: 5px;" class="center animate__animated animate__fadeInLeft">
+
+
+      <div class="animate__animated animate__fadeIn" style="height: auto;">
+
+        <div style="width: 65%; height: auto; float: left;">
+          <h1 style="color: #ffffff; padding-left: 2.5vw; font-family: 'Cinzel Decorative', serif;
+          font-size: 36px;
+          background: linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;">
+           Internet On Your Palm
+         </h1>
+         <h4 style="color: #ffffff; padding-left: 25px; font-family: 'Cinzel Decorative', serif;
+         font-size: 1.2vw;
+         background: linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;">
+           (Not Quite) <i style="font-size: 1vw;"> - Source: MIT Technology Review</i>
+        </h4>
+        <p style="color: #ffffff; padding-left: 25px; font-family: 'Cinzel', serif;
+        font-size: 1.3vw;
+        background: radial-gradient(#008080, #03fdfc, #bafdfe);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">
+          <b>
+            According to <a class="hlink"href="https://www.technologyreview.com/2021/11/26/1040459/afghanistan-sneakernet-content-dealers-kars-taliban/">Technology Review's article</a>,
+            Afghani individuals defined as <i>kars</i> now carry portions of the internet in physical drives to share them with Afghanis without internet connection. Having been derived
+            of their freedom and manifestly their internet access, Afghanis now rely on <i>kars</i> to sell them segments of the information superhighway. Movies, <i>"music"</i>, and a few other
+            types of content are transferred from neighbouring countries, stored in physical drives and sold off. They continue to sell these tokens of sanity while openly expressing their fear
+            of execution.<br><br>
+            Accounts like these are a constant reminder of our overlooked privilege.<br>
+            <a class ="hlink" href="https://www.technologyreview.com/2021/11/26/1040459/afghanistan-sneakernet-content-dealers-kars-taliban/"><i>Read the full article on MIT Technology Review</i></a>
+          </b>
+        </p>
+
+        </div>
+
+        <div style="width: 35%; height: auto; float: left;">
+          <img src="briefcase.gif" height="376px" width="470px">
+        </div>
+
+      </div>
+
+      <br><br><br><br><br>
+      <img src="gradient.jpg" style="width: 100%; height: 5px;" class="center animate__animated animate__fadeInLeft">
+
+
+      <img class="center animate__animated animate__fadeInLeft" src="quantum0.gif" style="width: 100%">
+
+      <br>
+
+      <p style="font-family: 'Cinzel Decorative', serif;
+                font-size: 2.4vw;
+                color: #E1C699;
+                text-align: center; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                                                                        -webkit-background-clip: text;
+                                                                        -webkit-text-fill-color: transparent;">
+          Elements of quantum mechanics implemented in powerful computing.
+      </p>
+      <p style="font-family: 'Cinzel Decorative', serif;
+                font-size: 1.7vw;
+                color: #E1C699;
+                text-align: center; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                                                                        -webkit-background-clip: text;
+                                                                        -webkit-text-fill-color: transparent;">
+          Boston's QuEra Computing "fashions" a 256-bit quantum computer.<br>
+          What better way to showcase their technology than by creating a Mario Bros. GIF using qubits.
+      </p>
+      <br><br>
+      <div class="text" style="text-align: center; font-size: 1.7vw; font-family: 'Cinzel Decorative', cursive; color: #d6bddd;">
+        <a class="hlink text" href="https://www.technologyreview.com/2021/11/17/1040243/quantum-computer-256-bit-startup/">
+          <i>Read full article on MIT Technology Review</i>
+        </a>
+      </div>
+
+    </body>
+
+    <br>
+    <footer>
+      <hr>
+      <img src="gradient.jpg" style="width: 100%; height: 5px;" class="center animate__animated animate__fadeInLeft">
+      <br>
+
+        <p style="font-family: 'Cinzel', serif;
+                  font-size: 1.4vw;
+                  color: #E1C699;
+                  text-align: center; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                                                                          -webkit-background-clip: text;
+                                                                          -webkit-text-fill-color: transparent;">
+            Debjyoti Sikdar
+        </p>
+        <p style="font-family: 'Cinzel', serif;
+                  font-size: 1vw;
+                  color: #E1C699;
+                  text-align: center; background: -webkit-linear-gradient(#c8ad7f, #e5c899, #ffe4b4, #ffffd0, #ffffec, #ffffff);
+                                                                          -webkit-background-clip: text;
+                                                                          -webkit-text-fill-color: transparent;">
+            <a href="mailto:debjyotisikdar@icloud.com"> debjyotisikdar@icloud.com </a>
+        </p>
+      <hr>
+    </footer>
+</html>
